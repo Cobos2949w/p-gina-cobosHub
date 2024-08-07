@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../src/styles/estiloregistro.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Usuario</h2>
+        <form action="../ejemplosphpe/ejemplosphp/sesionesPHP/crearcuenta.php" method="post" enctype="multipart/form-data">
+            <label for="nombreUsuario">Nombre:</label>
+            <input type="text" id="nombreUsuario" name="nombreUsuario" required>
+
+            <label for="apPaternoUsuario">Apellido Paterno:</label>
+            <input type="text" id="apPaternoUsuario" name="apPaternoUsuario" required>
+
+            <label for="apMaternoUsuario">Apellido Materno:</label>
+            <input type="text" id="apMaternoUsuario" name="apMaternoUsuario" required>
+
+            <label for="emailUsuario">Correo Electrónico:</label>
+            <input type="email" id="emailUsuario" name="emailUsuario" required>
+
+            <label for="telUsuario">Teléfono:</label>
+            <input type="tel" id="telUsuario" name="telUsuario" required>
+
+            <label for="fotoUsuario">Foto:</label>
+            <input type="file" id="fotoUsuario" name="fotoUsuario" accept="image/*">
+
+            <label for="nombreLogin">Nombre de Usuario:</label>
+            <input type="text" id="nombreLogin" name="nombreLogin" required>
+
+            <label for="claveLogin">Contraseña:</label>
+            <input type="password" id="claveLogin" name="claveLogin" required>
+
+            <label for="idRolUsuario">Rol de Usuario:</label>
+            <select id="idRolUsuario" name="idRolUsuario" required>
+                <option value="1">Administrador</option>
+                <option value="2">Cliente</option>
+                <option value="3">Invitado</option>
+            </select>
+
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>

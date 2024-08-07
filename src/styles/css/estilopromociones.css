@@ -1,0 +1,17 @@
+#promo1 {
+    float: left;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+}
+
+#promo2 {
+    float: left;
+    height: 90%;
+
+}
+
+#promo3 {
+    float: left;
+}
+

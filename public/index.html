@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coboshub</title>
+    <link rel="stylesheet" href="../src/styles/css/estiloIndex.css">
+    <link rel="stylesheet" href="../src/styles/css/estilomenu.css">
+    <link rel="stylesheet" href="../public/perfil.html">
+    <link rel="stylesheet" href="../node_modules/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../node_modules/fontawesome-free-6.5.2-web/css/all.css">
+</head>
+<body>
+   <div class="container-fluid" id="contenedorPrincipal"> 
+    <header><div>
+        <div class="row">
+            <div class="col-sm-4 mt-4">
+                <h1>CoboStore</h1>
+            </div>
+            <div class="col-sm-6 mt-4">
+                <div class="input-group">
+                    <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
+                        Categorias
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="../public/telefoniia.html"  class="dropdown-item" >Telefonia</a></li></li>
+                        <li><a href="../public/hogar.html" class="dropdown-item">Hogar</a></li></li>
+                        <li class="dropdown-item">Licores</li>
+                        <li class="dropdown-item">Videojuegos</li>
+                    </ul>
+                    <input class="form-control" type="text" name="txtbuscar" placeholder="Buscar">
+                    <button class="btn btn-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg></button>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-4">
+                <a href="../public/carrito.html" class="btn btn-warning" ><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                 
+                </svg></a>
+            </div>
+            </div>
+            
+</div>
+        
+        
+       </header>
+       <nav>
+        <ul>
+            <li>
+                <a href="" data-bs-toggle="offcanvas" data-bs-target="#demo"><i class="fa-solid fa-bars"></i> Todo</a>
+                <div class="offcanvas offcanvas-start text-bg-dark" id="demo">
+                    <div class="offcanvas-header">
+                      <h1 class="offcanvas-title">Heading</h1>
+                      <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <p>Some text lorem ipsum.</p>
+                      <p>Some text lorem ipsum.</p>
+                      <button class="btn btn-secondary" type="button">A Button</button>
+                    </div>
+                  </div>
+            </li>
+            <li>
+                <a href="../public/promociones.html">Promociones</a>
+            </li>
+            <li>
+                <a href="../public/masvendido.html">Lo más vendido</a>
+            </li>
+            <li id="perfil">
+                <a href="perfil.html">Perfil</a>
+            </li>
+        </ul>
+       </nav>
+       <nav>
+        <p></p>
+       </nav>
+       <section>
+        <iframe name="contenidoiframeindex" width="100%" height="100%" src="../src/views/promociones.html" frameborder="0"></iframe>
+    </section>
+    <footer><p>Pie de pagina</p></footer>
+   </div> 
+</body>
+</html>

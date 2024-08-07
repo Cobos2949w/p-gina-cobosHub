@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="../src/styles/css/carritcs.css">
+    <style>
+        /* Añadir estilos básicos directamente en el HTML para la vista previa */
+        .cart-container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            margin: 10px;
+            float: left;
+        }
+
+        .card-img-top {
+            width: 73%;
+            height: auto;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .cart-table th, .cart-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .cart-total {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .checkout-btn, .remove-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .checkout-btn:hover, .remove-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Carrito de Compras</h1>
+
+        <div class="products"> 
+            <div id="img1" class="card" style="width: 200px; height: 386px;">
+                <img class="card-img-top" src="../public/assts/img/imagenespromociones/iph15pmx.webp" alt="Iphone 15 Pro Max">
+                <div class="card-body">
+                    <h4 class="card-title">Iphone 15 Pro Max</h4>
+                    <p class="card-text">(256 GB) - Titanio</p>
+                    <h3>$24,351</h3>
+                </div>
+            </div>
+        
+            <div id="img2" class="card" style="width: 200px; height: 386px;">
+                <img class="card-img-top" src="../public/assts/img/imagenespromociones/ipadn.webp" alt="Apple iPad-Pro M4-5th">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Apple iPad-Pro M4-5th</h4>
+                    <p class="card-text">Negro - 8GB (256GB)</p>
+                    <h3>$22,363</h3>
+                </div>
+            </div>
+        
+        </div>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>15 Pro Max</td>
+                    <td>$24,351.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$24,351.00</td>
+                    <td><button class="remove-btn">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>Apple iPad-Pro M4</td>
+                    <td>$22,363.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$22,363.00</td>
+                    <td><button class="remove-btn">Eliminar</button></td>
+                </tr>
+                <!-- Más productos aquí -->
+            </tbody>
+        </table>
+
+        <div class="cart-total">
+            <h3>Total: $46,714.00</h3>
+            <button class="checkout-btn">Proceder al Pago</button>
+        </div>
+    </div>
+</body>
+</html>
+    
